@@ -6,6 +6,15 @@
         android:fromXDelta="-1000"
         android:toXDelta="0"
         android:duration="3000"
-        android:startOffset="5000"
+        android:startOffset="4500"
+        />
+
+    <rotate
+        android:duration="3000"
+        android:fromDegrees="0"
+        android:pivotX="30%"
+        android:pivotY="40%"
+
+        android:toDegrees="360"
         />
 </set>
