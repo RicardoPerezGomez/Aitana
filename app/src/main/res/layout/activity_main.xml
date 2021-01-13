@@ -12,7 +12,23 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:visibility="visible"
-        tools:ignore="invalid" />
+        tools:ignore="invalid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+
+    <!--
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+
+/>
+-->
 
     <TextView
         android:id="@+id/titulo"

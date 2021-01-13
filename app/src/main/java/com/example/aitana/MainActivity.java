@@ -3,11 +3,13 @@ package com.example.aitana;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.webkit.WebView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +19,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         WebView webView = (WebView) findViewById(R.id.webView);
-        webView.loadUrl("file:///android_asset/Nieve.gif");
+       webView.loadUrl("file:///android_asset/Nieve.gif");
+
+        /* VideoView videoView = (VideoView) findViewById(R.id.video);
+        Uri path = Uri.parse("android.resource://com.example.reproducirvideo/" + R.raw.nieve);
+        videoView.setVideoURI(path);
+        videoView.start();
+
+         */
 
         Animation animacion = AnimationUtils.loadAnimation(this,R.anim.fade_in_splash);
         TextView titulo = (TextView) findViewById(R.id.titulo);
@@ -31,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         TextView corazon = (TextView) findViewById(R.id.corazon);
         corazon.startAnimation(animacion2);
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.franco_de_vita_tan_solo_tu);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.tan_solo_tu);
         mediaPlayer.start();
 
 
